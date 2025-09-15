@@ -14,10 +14,11 @@
     }
     
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
-      background: linear-gradient(135deg, #f4f7fa 0%, #eef2f7 100%);
+      background: var(--light);
       color: var(--dark);
+      transition: var(--transition);
       line-height: 1.6;
       overflow-x: hidden;
     }
@@ -254,6 +255,7 @@
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     }
     
+    /* Projects Section */
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -262,17 +264,17 @@
     }
     
     .project-card {
-      background: white;
-      border-radius: 10px;
+      background: var(--light);
+      border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      transition: var(--transition);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       animation: fadeIn 0.8s ease-out;
     }
     
     .project-card:hover {
       transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     }
     
     .project-img {
@@ -443,6 +445,7 @@
       text-decoration: none;
       transition: var(--transition);
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      animation: pulse 2s infinite;
     }
     
     .cta-button:hover {
