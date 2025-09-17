@@ -10,40 +10,39 @@
   <style>
     /* Default (Light Mode) */
     :root {
-      --primary: #2980b9;
+      --primary: #000406;
       --secondary: #2c3e50;
-      --accent: #e74c3c;
+      --accent: #9ac0f9;
       --light: #ecf0f1;
       --dark: #2c3e50;
       --transition: all 0.3s ease;
     }
-
-    /* Dark Mode */
-    body.dark-theme {
-      --primary: #3498db;
-      --secondary: #1a252f;
-      --light: #f4f7fa;
-      --dark: #1a252f;
-    }
   </style>
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <header class="glass-nav" id="glass-nav">
+    <nav>
+      <ul>
+        <li><a href="#landing">Home</a></li>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <!-- Landing Page -->
   <section id="landing" class="landing-page">
     <div class="landing-content">
-      <h1>Hi, I'm <span>Clarence Anthony G. Bolivar</span></h1>
-      <p>Aspiring Developer | Tech Enthusiast | Innovator</p>
-      <a href="#about-me" class="cta-button">Explore My Work</a>
+      <h1 class="animate-typing">Hi, I'm <span>Clarence Anthony G. Bolivar</span></h1>
+      <p class="fade-in">Aspiring Developer | ComSci Student | Masarap</p>
+      <a href="#about-me" class="cta-button">Explore Me</a>
     </div>
     <div class="scroll-indicator">
       <i class="fas fa-chevron-down"></i>
     </div>
   </section>
-
-  <!-- Theme Toggle -->
-  <div class="theme-toggle">
-    <i class="fas fa-moon"></i>
-  </div>
   
   <div class="scroll-top">
     <i class="fas fa-arrow-up"></i>
@@ -52,13 +51,17 @@
   <!-- Main Content -->
   <main class="container">
     <section id="about-me">
-      <h2>About Me</h2>
-      <ul>
-        <li>Aspiring developer with a heart for service and innovation</li>     
-        <li>Gamer and gym enthusiast because balance matters</li>
-        <li>Driven by the belief that technology should empower, not exclude</li>
-        <li>Currently studying Computer Science with a focus on practical applications and community impact</li>
-       </ul>
+      <div class="about-me-container">
+        <div class="about-me-avatar">
+          <img src="assets/IMG_15382.jpg" alt="Your Picture">
+        </div>
+        <div class="about-me-content">
+          <h2>About Me</h2>
+          <p>
+            Hi! I'm Clarence Anthony G. Bolivar, a 3rd-year Computer Science student at West Visayas State University. I enjoy building things that matter, playing games, and going to the gym. My goal is to make technology accessible to everyone.
+          </p>
+        </div>
+      </div>
     </section>  
 
     <section id="inspiration">
@@ -66,6 +69,12 @@
       <p>
         Growing up, I saw how technology could transform lives — but also how many were left behind. My goal is to bridge that gap. I want to create tools, platforms, and solutions that serve not just the privileged, but also the underserved. This portfolio is a step toward that mission.
       </p>
+      <div class="inspiration-video">
+        <video controls width="600">
+          <source src="assets/INSPIRE.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </section>
 
     <section id="projects">
@@ -78,43 +87,40 @@
         <!-- Project 1 -->
         <div class="project-card">
           <div class="project-img">
-            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/125657a4-42b3-4e63-a331-9aca11c93f8c.png" alt="Community resource finder application interface with location map">
+            <img src="assets/TUON.png" alt="Community resource finder application interface with location map">
           </div>
           <div class="project-content">
-            <h3>Project 1</h3>
-            <p>TBU</p>
-            <a href="#" class="project-link">View Project</a>
+            <h3>TuonTa</h3>
+            <!-- <a href="#" class="project-link">View Project</a> -->
           </div>
         </div>
 
         <!-- Project 2 -->
         <div class="project-card">
           <div class="project-img">
-            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/829dd4b1-1113-4e19-8b97-fd26acca56fe.png" alt="Accessibility web app showing screen reader compatibility features">
+            <img src="assets/WEVO.png">
           </div>
           <div class="project-content">
-            <h3>Project 2</h3>
-            <p>TBU</p>
-            <a href="#" class="project-link">View Project</a>
+            <h3>WEVO</h3>
+            <!-- <a href="#" class="project-link">View Project</a> -->
           </div>
         </div>
 
         <!-- Project 3 -->
         <div class="project-card">
           <div class="project-img">
-            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/142170bc-7346-49d4-a088-3165e17c1f0e.png" alt="Hackathon winning team with award ceremony">
+            <img src="assets/GABAY.png" alt="Hackathon winning team with award ceremony">
           </div>
           <div class="project-content">
-            <h3>Project 3</h3>
-            <p>TBU</p>
-            <a href="#" class="project-link">View Project</a>
+            <h3>GabayAni</h3>
+            <!-- <a href="#" class="project-link">View Project</a> -->
           </div>
         </div>
       </div>
     </section>
 
     <section id="technical-skills">
-      <h2>🧰 Technical Skills</h2>
+      <h2>Technical Skills</h2>
       <div class="tech-skills">
         <span class="skill">Python</span>
         <span class="skill">Java</span>
